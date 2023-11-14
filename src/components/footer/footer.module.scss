@@ -1,0 +1,33 @@
+.footer_section {
+  padding: calc(56px + 2vw) 0 ;
+  background-color: #F0FFDB; 
+;
+  .decoration {
+    max-width: calc(320px + 42vw);
+    margin: 0;
+    padding: 30px calc(10px + 1vw);
+    margin-bottom: 30px;
+  }
+
+  .email_form {
+    
+    width: 90%;
+    margin: auto;
+    @media screen and (min-width: 1000px) {
+      width: 40%;
+    }
+  }
+
+  .footer_text_privacypolicy {
+    text-align: start;
+    padding: 0 calc(20px + 1vw);
+    @media screen and (min-width: 1000px) {
+      text-align: center;
+    }
+  }
+
+  .footer_input_email{
+  background-color: rgba(217, 217, 217, 0)
+
+  }
+}

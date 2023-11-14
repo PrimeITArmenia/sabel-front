@@ -1,0 +1,33 @@
+.ciao_section {
+  padding: calc(30px + 2vw) 0;
+  .card_box {
+    figure {
+      display: grid;
+      border-radius: 0 0 0 0;
+      overflow: hidden;
+      cursor: pointer;
+      max-height: 560px;
+      max-width: 420px;
+      transition: all 400ms ease-in-out;
+      &:hover {
+        border-radius: 100px 0px 100px 0px;
+      }
+    }
+
+  }
+  .ciao_cards{
+  max-width:auto;
+  margin-left: 350px;
+  @media screen and (max-width: 1000px) {
+    margin: 0;
+  }
+  }
+}
+    .text_ciao{
+      max-width: calc(900px + 10vw);
+      margin: auto;
+      padding: calc(20px + 1vw) 0 ;
+      text-align: center;
+      font-size: 18px;
+      line-height: 24px;
+    }

@@ -1,0 +1,35 @@
+.article_item{
+    border-top: 0.50px #AAAAAA solid;
+    padding: 9px 0 ;
+
+
+
+
+    
+    td:last-child{
+        text-align: right;
+    }
+    td:first-child{
+        text-align: left;
+    }
+
+    .article_items_image{
+        text-align: center !important;
+   }
+    
+    .articles_items_draft_bin{
+       display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+             button{
+             border: 0;
+             background-color: transparent;
+    }
+    }
+
+}
+
+
+
+

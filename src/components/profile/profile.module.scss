@@ -1,0 +1,208 @@
+.profile_section {
+  margin-top: calc(60px + 2vw);
+  .container_profile {
+    width: calc(320px + 5vw);
+
+    .profile_text_upload_file{
+      text-align: center;
+          @media screen and (min-width: 1000px) {
+      text-align: initial;
+    }
+    }
+
+    .membership_area {
+      padding-top: calc(30px - 1vw);
+    }
+
+    .email_preferences {
+      padding-top: 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+
+      fieldset {
+        padding: 10px 10px 10px 15px;
+
+        
+
+        border-radius: 5px;
+        legend {
+          width: auto;
+          float: none;
+          font-size: 12px;
+          margin-bottom: -10px;
+          // margin: 0;
+        }
+        input {
+          border: none;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .profile_settings {
+    margin-top: calc(43px + 1.5vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1000px) {
+      align-items: flex-start;
+    }
+  }
+
+  .forgot_password {
+    right: 11px;
+  }
+
+  .section_email_password {
+    margin-top: 32px;
+  }
+
+  .sign_in_btn {
+    font-size: 12px;
+  }
+
+  .countinue_facebook {
+    margin-bottom: 30px;
+  }
+  .countinue_google {
+    margin: 12px 0;
+  }
+
+  .privacy_police {
+    text-align: center;
+    font-size: calc(10px + 0.2vw);
+  }
+
+  .name_surname {
+    margin-top: 14px;
+  }
+
+  .profile_forgot_password {
+    min-inline-size: fit-content;
+  border-radius: 2px;
+  }
+
+  //
+
+  .toggler_wrapper {
+    display: block;
+    width: 45px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .toggler_wrapper input[type="checkbox"] {
+    display: none;
+  }
+
+  .toggler_wrapper input[type="checkbox"]:checked + .toggler_slider {
+    background-color: #44cc66;
+  }
+
+  .toggler_wrapper .toggler_slider {
+    background-color: #ccc;
+    position: absolute;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+
+  .toggler_wrapper .toggler-knob {
+    position: absolute;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+
+  /*Style 18*/
+
+  .toggler_wrapper.label input[type="checkbox"]:checked + .toggler_slider {
+    background-color: #ff7c65;
+  }
+
+  .toggler_wrapper.label
+    input[type="checkbox"]:checked
+    + .toggler_slider
+    .toggler-knob {
+    left: calc(100% - 19px - 3px);
+  }
+
+  .toggler_wrapper.label .toggler_slider {
+    -webkit-box-shadow: 2px 4px 8px rgba(200, 200, 200, 0.5);
+    box-shadow: 2px 4px 8px rgba(200, 200, 200, 0.5);
+    border-radius: 0;
+  }
+
+  .toggler_wrapper.label .toggler-knob {
+    width: calc(25px - 6px);
+    height: calc(25px - 6px);
+    left: 3px;
+    top: 3px;
+    background-color: white;
+  }
+
+  $backgroundColor: #e6e6e6;
+  $checkedColor: #ff7c65;
+  $shadowColor: #fff;
+
+  // Define mixin for common box-shadow
+  @mixin boxShadow($x, $y) {
+    box-shadow: $x 0px 5px $y;
+  }
+
+  // SCSS for the toggle-rect-color
+  .toggle_rect_color {
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    input[type="checkbox"] + label {
+      display: block;
+      position: relative;
+      width: 3em;
+      height: 26px;
+      margin-bottom: 20px;
+      background: $backgroundColor;
+      border-radius: 0.2em;
+      @include boxShadow(inset 0px 0px, 0.1);
+      cursor: pointer;
+
+      border: solid 1px $backgroundColor;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 18px;
+        border-radius: 0.2em;
+        background: #fff;
+        @include boxShadow(2px 0px, 0.2);
+        position: absolute;
+        left: 3px;
+        top: 3px;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    input[type="checkbox"]:checked + label {
+      background: $checkedColor;
+
+      &:before {
+        @include boxShadow(-2px 0px, 0.2);
+        left: 1.6em;
+      }
+    }
+  }
+}

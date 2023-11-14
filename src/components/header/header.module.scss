@@ -1,0 +1,15 @@
+.navbar_menu{
+// margin: 50px;
+padding: 50px;
+}
+.header_navbar_logo{
+
+    left: 50%;
+    top: 25%;
+    
+      @media screen and (min-width: 1000px) {
+        position: absolute;
+        transform: translate(-50%);
+  }
+
+}

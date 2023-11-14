@@ -1,0 +1,59 @@
+
+.aticle_box {
+  border-radius: 6px;
+  padding: 0;
+  .article_box_table{
+    border-radius: 6px;
+  }
+
+
+
+  th{
+    border: 0;}
+  
+
+    th:last-child{
+        text-align: right;
+    }
+     th:first-child{
+        text-align: left;
+    }
+}
+
+
+.article_box_header > th {
+  color: #ADADAD;
+  font-size: 18px;
+  font-weight: 300;
+}
+.countPagination{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.containerPagination{
+  padding: 5px 25px;
+  background: white;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.countPage{
+  margin : 0 35px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+  .pageIconEnable {
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+
+  }
+.pageIconDisable{
+  color: rgba(182, 182, 182, 0.8);
+  font-size: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}

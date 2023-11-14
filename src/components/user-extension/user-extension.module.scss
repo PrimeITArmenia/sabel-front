@@ -1,0 +1,52 @@
+.searchBox {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    // top: -175px;
+    height: 175px;
+    background-color: #f0f0f0;
+    // margin-top: -39px;
+    display: flex;
+    padding: 62px 50px 45px 50px;
+    transition: top 200ms ease-in-out;
+
+    .active{
+      top: 0;
+    }
+
+      input{
+        width: 100%;
+        border: none;
+        outline: 50px;
+        background-color: #f0f0f0;
+        font-size: 16px;
+        border-bottom: 1px solid #8E8E8E;
+            }
+    button{
+    background-color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    align-self: center;
+    bottom: 12px;
+    position: relative;
+    right: 60px;
+    display: flex;
+}
+
+}
+  .active{
+      top: 0;
+    }
+
+
+
+    .modal_search{
+      margin: 0;
+      max-width: 100%;
+    }
+    .button_search_line{
+      line-height: 0;
+    }
+
+  

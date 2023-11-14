@@ -1,0 +1,35 @@
+.container_dashboard_tags{
+    display: flex;
+
+    .cotainer_sidebar{
+       
+    }
+    .container_main{
+        width: 100%;
+        padding: 0 25px 0 35px;
+    }
+
+.form_control_input{
+    max-width: 307px;
+}
+    .tags_button{
+        padding: 10px 25px ;
+        font-size: 16px;
+        background-color: rgba(71, 189, 125, 1);
+        border: 0;
+        border-radius: 6px;
+        color: #fff;
+
+    }
+
+    .tags_form{
+        padding: 12px 0 15px 0;
+    }
+
+    .tags_row_style{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:18px;
+    }
+}

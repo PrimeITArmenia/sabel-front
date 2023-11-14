@@ -1,0 +1,41 @@
+.card_item {
+  transition: all 200ms ease-in-out;
+  // aspect-ratio: 0.7241;
+    height: 400px;
+    width: 100%;
+    @media screen and (min-width: 1000px) {
+      height: 100%;
+    }
+  .card_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  .card_text {
+    font-size: 16px;
+  }
+
+  .favorite {
+    display: flex;
+    border-radius: 14px;
+    padding: 8px;
+  }
+  font-size: calc(16px + 1vw);
+  .favorite {
+    top: 5%;
+    right: 5%;
+  }
+  .figure {
+    transition: all 200ms ease-in-out;
+  }
+  &:hover {
+    border-radius: 100px 0px 100px 0px;
+    .figure {
+      opacity: 0.5;
+      background-color: #fff;
+      color: black;
+    }
+  }
+}

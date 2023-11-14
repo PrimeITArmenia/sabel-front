@@ -1,0 +1,15 @@
+.subheader_navbar {
+  gap: 20px;
+  // width: 100%;
+  font-size: 18px;
+  font-family: Playfair Display;
+  font-weight: 400;
+}
+
+.subheader_navbar_items {
+  cursor: pointer;
+  font-weight: 800;
+  @media screen and (min-width: 1000px) {
+    font-weight: 400;
+  }
+}

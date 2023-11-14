@@ -1,0 +1,210 @@
+.container_dashboard_crete_article {
+  display: flex;
+
+  .cotainer_sidebar {
+  }
+  .container_main {
+    width: 100%;
+    padding: 0 25px 0 35px;
+  }
+
+  .form_control_input {
+    width: 100%;
+    @media screen and (min-width: 1000px) {
+      width: 100%;
+    }
+  }
+  .tags_button {
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: rgba(71, 189, 125, 1);
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+  }
+
+  .crete_article_form {
+    padding: 12px 0 calc(40px + 1vw) 0;
+    width: 100%;
+    @media screen and (min-width: 1000px) {
+      width: auto;
+    }
+  }
+
+  .tags_row_style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding-top: 30px;
+    width: 100%;
+
+    @media screen and (min-width: 1000px) {
+      display: flex;
+      flex-direction: row;
+            padding-right: 115px;
+
+
+    }
+  }
+
+  .dashboard_create_btn_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-top: calc(20px + 2vw);
+    padding-bottom: calc(50px + 5vw);
+
+    @media screen and (min-width: 1000px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+    }
+    .dashboard_create_article_btn_publish,
+    .dashboard_create_article_btn_save {
+      border: 0;
+      border-radius: 6px;
+      background-color: rgba(71, 189, 125, 1);
+      color: #fff;
+    }
+
+    .dashboard_create_article_btn_publish {
+      padding: 10px 29px;
+    }
+
+    .dashboard_create_article_btn_save {
+      padding: 10px 36px;
+    }
+  }
+
+  .article_create_form {
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1000px) {
+      justify-content: start;
+    }
+  }
+}
+
+
+
+.toggler_wrapper {
+  display: block;
+  width: 45px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggler_wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.toggler_wrapper input[type="checkbox"]:checked + .toggler_slider {
+  background-color: #44cc66;
+}
+
+.toggler_wrapper .toggler_slider {
+  background-color: #ccc;
+  position: absolute;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.toggler_wrapper .toggler-knob {
+  position: absolute;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+/*Style 18*/
+
+.toggler_wrapper.label input[type="checkbox"]:checked + .toggler_slider {
+  background-color: #47bd7d;
+}
+
+.toggler_wrapper.label
+  input[type="checkbox"]:checked
+  + .toggler_slider
+  .toggler-knob {
+  left: calc(100% - 19px - 3px);
+}
+
+.toggler_wrapper.label .toggler_slider {
+  -webkit-box-shadow: 2px 4px 8px rgba(200, 200, 200, 0.5);
+  box-shadow: 2px 4px 8px rgba(200, 200, 200, 0.5);
+  border-radius: 0;
+}
+
+.toggler_wrapper.label .toggler-knob {
+  width: calc(25px - 6px);
+  height: calc(25px - 6px);
+  left: 3px;
+  top: 3px;
+  background-color: white;
+}
+
+$backgroundColor: #e6e6e6;
+$checkedColor: #47bd7d;
+$shadowColor: #fff;
+
+// Define mixin for common box-shadow
+@mixin boxShadow($x, $y) {
+  box-shadow: $x 0px 5px $y;
+}
+
+// SCSS for the toggle-rect-color
+.toggle_rect_color {
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    width: 3em;
+    height: 26px;
+    // margin-bottom: 20px;
+    background: $backgroundColor;
+    border-radius: 0.2em;
+    @include boxShadow(inset 0px 0px, 0.1);
+    cursor: pointer;
+
+    border: solid 1px $backgroundColor;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 18px;
+      border-radius: 0.2em;
+      background: #fff;
+      @include boxShadow(2px 0px, 0.2);
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  input[type="checkbox"]:checked + label {
+    background: $checkedColor;
+
+    &:before {
+      @include boxShadow(-2px 0px, 0.2);
+      left: 1.6em;
+    }
+  }
+}
+
+.article_home_input{
+  font-size: 16px;
+  margin: 0;
+}

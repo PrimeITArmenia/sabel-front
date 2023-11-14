@@ -1,0 +1,64 @@
+.membership_sabel {
+  .membership_container {
+    padding: 0 calc(20px + 1vw);
+    margin-top: 96px;
+    @media screen and (min-width: 1000px) {
+    }
+    .membership_text {
+      padding: 0 calc(20px + 5vw);
+      margin-top: 45px;
+      font-size: 18px;
+    }
+    .membership_cards_block {
+      padding-top: 55px;
+
+      .membership_cards {
+        padding: 0 calc(20px + 1vw);
+        padding-top: 28px;
+        padding-bottom: calc(55px + 2vw);
+        .membership_cards_items {
+          padding: 26px 32px 26px 32px;
+
+          .cards_items_header {
+            font-size: 16px;
+            font-weight: 400;
+            max-width: 100px;
+            margin: auto;
+          }
+
+          .cards_items_price {
+            font-family: Prata;
+            font-weight: bolder;
+            font-size: 36px;
+            padding-top: 20px;
+            font-weight: 400;
+          }
+
+          .cards_items_text {
+            font-size: 12px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .free_trial {
+      max-width: 160px;
+      padding: 39px 0px;
+    }
+
+    .membership_button {
+      font-size: 12px;
+    }
+  }
+  .membership_image{
+    margin: calc(20px + 2vw) 0;
+    height: calc(700px);
+    background-image: url("/assets/images/membership-image.webp");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+  }
+}

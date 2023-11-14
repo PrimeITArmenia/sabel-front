@@ -1,0 +1,180 @@
+.section_payment {
+
+  .payment_popup_section{
+    padding: 0 calc(24px + 1vw);
+    @media screen and (min-width: 1000px) {
+          padding: inherit;
+
+    }
+  }
+  .payment_column_or_line{
+    max-height: 24px;
+    padding-bottom: 15px;
+
+  }
+
+  .or_line {
+    overflow: hidden;
+    text-align: center;
+    font-size: 15px;
+    
+  }
+  .or_line:before,
+  .or_line:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .or_line:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  .or_line:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+  .logo_and_back_row_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 24px;
+  }
+
+  .container_price_direction {
+    display: none;
+    @media screen and (min-width: 1000px) {
+         padding-top: calc(42px + 2vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // max-width: 100vh;
+    margin: auto;
+    height: 100vh;
+    }
+
+
+  }
+
+  .container_card_direction {
+    padding-top: calc(42px + 2vw);
+    background-color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+
+    display: flex;
+    flex-direction: column;
+    // height: 100vh;
+    justify-content: space-between;
+    @media screen and (min-width: 1000px) {
+    box-shadow: 0px 20px 20px 0px gray;
+    }
+  }
+
+  .form_setion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100vh;
+    margin: auto;
+    height: 100vh;
+  }
+
+  .membersihp_hader {
+
+    padding-top: 40px;
+    h4 {font-family: Futura Std;}
+    p {font-family: Prata;}
+    
+  }
+
+  .membership_title {
+    padding-top: 24px;
+  }
+
+  .card_form {
+    position: relative;
+  }
+
+  .card_form_variations {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    right: 10px;
+    top: 63%;
+    background-color: #fff;
+  }
+
+  .payment_container_price {
+  }
+
+  .text_decoration_prata{
+    font-family: Prata;
+  }
+
+  .cvc_card {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    right: 10px;
+    top: 25%;
+    background-color: #fff;
+  }
+
+  .price_direction_row {
+    max-width: 100vh;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // align-items: center;
+    gap: 7px;
+  }
+  .price_direction_row_footer{
+    border-left: 1px solid #000;
+  }
+
+  .paypal_button, .form_control_email, .form_control_mounth_year, .form_control_cvc, .form_control_state, .form_control_zip  {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08), 0px 2px 5px 0px rgba(0, 0, 0, 0.12), 0px -1px 1px 0px rgba(0, 0, 0, 0.12) ;
+  }
+}
+
+  // filter
+
+  .filter {
+  .dropdown_box {
+    display: none;
+  }
+  .dropdown_box.show {
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .container_card_direction{
+      display: none
+      
+    }
+
+    .price_mobile_footer{
+      display: none !important;
+    }
+    .mobile_payment_section{
+      display: none;
+    }
+
+    .container_price_direction{
+      
+    }
+
+    
+  }

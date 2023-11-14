@@ -1,0 +1,39 @@
+.about_section {
+  padding: calc(30px + 2vw) 0;
+  .about_image {
+    height: calc(774px);
+    background-image: url("../../../public/assets/images/about-2.webp");
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .about_body_text {
+    font-size: 18px;
+  }
+  .text_body {
+    padding: 0 calc(40% - 280px);
+    padding-top: calc(10px + 2.5vw);
+    h2 {
+    }
+
+    p {
+      padding-top: 72px;
+
+      @media screen and (min-width: 1000px) {
+        text-align: left;
+      }
+    }
+    @media screen and (min-width: 1000px) {
+    }
+  }
+
+  .aphorism {
+    padding: 60px 0 0 0;
+  }
+}
+
+

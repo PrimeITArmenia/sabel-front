@@ -1,0 +1,210 @@
+$theme-colors: (
+  "primary": #ff7c65,
+  "secondary": #8e8e8e,
+  "tertiary": #d9d9d9,
+  "quaternary": #fff,
+  "forty": #f0f0f0,
+  "black": #000,
+  "green": #009639,
+  "gray": #3c4257,
+  "gray-text": #8792a2,
+  "dashboard": #ebedef,
+);
+
+$font-family-base: "Futura Std", "Open Sans", system-ui, -apple-system,
+  "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji";
+
+$display-font-sizes: (
+  1: 3.375rem,
+  2: 2.25rem,
+  3: 1.625rem,
+  4: 1.125rem,
+  5: 1rem,
+  6: 0.875rem,
+  7: 0.75rem,
+);
+
+$display-font-family: Playfair Display;
+$display-font-weight: 400;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1000px,
+  xl: 1200px,
+  xxl: 1440px,
+);
+
+$headings-font-family: Playfair Display;
+$headings-font-weight: 400;
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "fonts";
+
+@import "lexical";
+
+@import "../components/Editor/components/CustomNodes/ImageNode/ImageNode.css";
+
+@import "../components/Editor/components/ui/ImageResizer/ImageResizer.css";
+
+.navbar-nav .nav-link.active {
+  background-color: #ff7c65;
+  color: #fff;
+}
+
+.position-md-absolute {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+    left: 50%;
+  }
+}
+.editor-wrapper {
+  background-color: #d5dce5;
+  border-radius: 5px;
+}
+
+.modal-dialog {
+  max-width: 100%;
+  margin: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0;
+}
+
+.sidebar-toggler {
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  justify-content: flex-start;
+  &:before {
+    display: none;
+  }
+}
+
+.dropdown-toggle {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 6px;
+  border: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    background-color: #fff !important;
+  }
+
+  &:active {
+    background-color: #fff !important;
+  }
+
+  &:focus-visible {
+    background-color: #fff !important;
+  }
+
+  &:focus {
+    background-color: #fff !important;
+  }
+}
+
+.ReactTags__selected {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+  span {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    button {
+      border: none;
+      color: white;
+      background: #009639;
+      border-radius: 100%;
+    }
+  }
+}
+
+.ReactTags__tagInput {
+  input {
+    width: 100%;
+  }
+}
+
+.text_editor {
+  padding: calc(20px + 2vw) 0;
+
+  h1 + {
+    padding-bottom: 40px;
+  }
+
+  > * {
+    padding-bottom: 5px !important;
+    text-align: center !important;
+    margin: 0;
+  }
+
+  p {
+    // padding: 0 calc(40% - 280px);
+    text-align: left !important;
+    @media screen and (max-width: 1000px) {
+      text-align: center !important;
+      margin: auto !important;
+    }
+  }
+
+  h1 {
+    text-align: left !important;
+    @media screen and (max-width: 1000px) {
+      text-align: center !important;
+      margin: auto !important;
+    }
+  }
+
+  h2 {
+    text-align: left !important;
+    @media screen and (max-width: 1000px) {
+      text-align: center !important;
+      margin: auto !important;
+    }
+  }
+
+  h3 {
+    text-align: left !important;
+    @media screen and (max-width: 1000px) {
+      text-align: center !important;
+      margin: auto !important;
+    }
+  }
+
+  .ql-align-center {
+    text-align: center !important;
+    margin: auto !important;
+  }
+
+  .ql-align-right {
+    text-align: right !important;
+    margin: auto !important;
+
+    @media screen and (max-width: 1000px) {
+      text-align: center !important;
+      margin: auto !important;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: calc(774px) !important;
+
+    width: 100% !important ;
+    object-fit: cover !important;
+  }
+}

@@ -1,0 +1,87 @@
+.filter {
+  gap: 15px;
+  .dropdown_box {
+    display: none;
+  }
+  .dropdown_box.show {
+    display: block;
+  }
+
+  // .filter{
+  //     width: calc(180px + 1vw);
+  // }
+
+  .form_check {
+    display: flex;
+    align-items: center;
+    accent-color: red;
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: 0.65rem;
+    }
+  }
+
+  .filter_box {
+    padding-left: 8px;
+    input[type="checkbox"] {
+      visibility: hidden;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .option {
+      display: block;
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .customcheckbox {
+      position: absolute;
+      top: 25%;
+      left: 0;
+      height: 12px;
+      width: 12px;
+      border-radius: 2px;
+      border: solid 0.5px #DCDCDC;
+    }
+    .option input:checked ~ .customcheckbox {
+      background-color: #ff7c65;
+
+
+    }
+    .customcheckbox:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    .option input:checked ~ .customcheckbox:after {
+      display: block;
+    }
+    .option .customcheckbox:after {
+      left: 3px;
+      bottom: 3px;
+      width: 7px;
+      height: 8px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+
+  .titele_list_title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .filter_button{
+    font-size: 12px;
+    padding: 13px 35px ;
+    width: 105px;
+  }
+  .filter_option_label{
+    border: solid 0.5px black;
+  }
+}

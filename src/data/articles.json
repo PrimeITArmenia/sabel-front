@@ -1,0 +1,100 @@
+[
+  {
+    "id": "123",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Published",
+    "title": "Sample Article 1",
+    "categories": "Technology"
+  },
+  {
+    "id": "124",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Draft",
+    "title": "Sample Article 2",
+    "categories": "Science"
+  },
+  {
+    "id": "125",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Published",
+    "title": "Sample Article 3",
+    "categories": "Health"
+  },
+  {
+    "id": "126",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Draft",
+    "title": "Sample Article 4",
+    "categories": "Business"
+  },
+  {
+    "id": "127",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Published",
+    "title": "Sample Article 5",
+    "categories": "Travel"
+  },
+  {
+    "id": "126",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Draft",
+    "title": "Sample Article 4",
+    "categories": "Business"
+  },
+  {
+    "id": "126",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Draft",
+    "title": "Sample Article 4",
+    "categories": "Business"
+  },
+  {
+    "id": "126",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Draft",
+    "title": "Sample Article 4",
+    "categories": "Business"
+  },
+  {
+    "id": "126",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Draft",
+    "title": "Sample Article 4",
+    "categories": "Business"
+  },
+  {
+    "id": "126",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Draft",
+    "title": "Sample Article 4",
+    "categories": "Business"
+  },
+  {
+    "id": "126",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Draft",
+    "title": "Sample Article 4",
+    "categories": "Business"
+  },
+  {
+    "id": "126",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Draft",
+    "title": "Sample Article 4",
+    "categories": "Business"
+  },
+  {
+    "id": "126",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Draft",
+    "title": "Sample Article 4",
+    "categories": "Business"
+  },
+  {
+    "id": "126",
+    "image": "./../assets/images/article_item_default_image.webp",
+    "status": "Draft",
+    "title": "Sample Article 4",
+    "categories": "Business"
+  }
+]
